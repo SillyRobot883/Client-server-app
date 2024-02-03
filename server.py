@@ -32,22 +32,23 @@ def start_server():
 def handle_client(client_socket):
     try:
         while True:
-            data = client_socket.recv(1024).decode()
+            option = client_socket.recv(1024).decode() # receive option from client
+            decimal_input = client_socket.recv(4096).decode() # receive the decimal input from the client
 
-            if not data: # if the client disconnects
+            print("Option: " + option)
+            print("Number: " + str(decimal_input))
+            if not option: # if the client disconnects
                 break
             
-            if data == 'B':
-                decimal_input = int(client_socket.recv(1024).decode()) # receive the decimal input from the client
-                binary_output = bin(decimal_input)[2:] # convert the decimal input to binary. 
+            if option == 'B':
+                binary_output = bin(int(decimal_input))[2:] # convert the decimal input to binary. 
                 client_socket.send(str(binary_output).encode())
 
-            elif data == 'H':
-                decimal_input = int(client_socket.recv(1024).decode())
-                hex_output = hex(decimal_input)[2:]
-                client_socket.send(str(hex_output).encode())
+            if option == 'H':
+                hex_output = hex(int(decimal_input))[2:]
+                client_socket.send(str(hex_output).encode()) # 
 
-            elif data == 'Q':
+            if option == 'Q':
                 print(Fore.RED + "Client disconnected.")
                 break
 
