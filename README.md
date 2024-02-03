@@ -12,11 +12,11 @@ The goal of this project is to implement a TCP client and server that performs d
 
 ### client.py
 
-Similar to Netcat, the client script establishes a connection to the server and provides a user interface for inputting conversion requests. The user can choose between converting a decimal number to binary or hexadecimal. The client performs error checking on user input and sends the request to the server. Upon receiving the server's response, the client displays the equivalent value or an error message.
+The client script establishes a connection to the server and provides a user interface for inputting conversion requests. The user can choose between converting a decimal number to binary or hexadecimal. The client performs error checking on user input and sends the request to the server. Upon receiving the server's response, the client displays the equivalent value or an error message.
 
 ### server.py
 
-The server script listens for incoming connections from clients. Once a connection is established, the server receives conversion requests from the client, processes them, and sends back the results. The server handles various error conditions and responds with appropriate messages.
+Similar to Netcat, the server script listens for incoming connections from clients. Once a connection is established, the server receives conversion requests from the client, processes them, and sends back the results. The server handles various error conditions and responds with appropriate messages.
 
 ## Usage
 
