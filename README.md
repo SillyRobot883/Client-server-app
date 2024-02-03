@@ -36,6 +36,7 @@ Similar to Netcat, the server script listens for incoming connections from clien
     ```bash
     python client.py
 5. Follow the on-screen instructions to input conversion requests.
+   ![network](https://github.com/SillyRobot883/Client-server-app/assets/51270428/9e7f7ab7-8d1b-4cab-b303-2277ba05d569)
 
 ## Error Handling
 
