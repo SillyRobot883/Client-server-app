@@ -64,7 +64,7 @@ try:
                     
                     # Check for 300 Bad Request: Missing B or H
         
-                    if not (user_input[0] == 'B' or user_input[0] == 'H'):
+                    elif not (user_input[0] == 'B' or user_input[0] == 'H'):
                         print(Fore.RED + "Error: Missing B or H")
                         print(Style.RESET_ALL) 
                     else:
