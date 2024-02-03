@@ -12,7 +12,7 @@ The goal of this project is to implement a TCP client and server that performs d
 
 ### client.py
 
-The client script establishes a connection to the server and provides a user interface for inputting conversion requests. The user can choose between converting a decimal number to binary or hexadecimal. The client performs error checking on user input and sends the request to the server. Upon receiving the server's response, the client displays the equivalent value or an error message.
+The client script establishes a connection to the server and provides a command line interface (CLI) for inputting conversion requests. The user can choose between converting a decimal number to binary or hexadecimal. The client performs error checking on user input and sends the request to the server. Upon receiving the server's response, the client displays the equivalent value or an error message.
 
 ### server.py
 
@@ -22,7 +22,7 @@ Similar to Netcat, the server script listens for incoming connections from clien
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cs330-networking-project.git
+   git clone https://github.com/SillyRobot883/cs330-networking-project.git
 2. Navigate to the project directory:
    ```bash
    cd cs330-networking-project
